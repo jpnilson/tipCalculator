@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="tipCalc.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="calcBox">
+    <div id="calcTitle">
+      <h3 id="titleText">Tip Calculator</h3>
+    </div>
+    <div id="calcForm">
+      <form>
+        <p>Total Amount</p>
+        <label for="total">$</label>
+        <input id="totalAmount" type="text" ><br>
+        <p>Tip Amount</p>
+        <select id="tipAmount">
+          <option value="0">None</option>
+          <option value=".10">10 Percent</option>
+          <option value=".15">15 Percent</option>
+          <option value=".20">20 Percent</option>
+          <option value=".25">25 Percent</option>
+          <option value=".30">30 Percent</option>
+        </select><br>
+        <p>Split tip between how many people?</p>
+        <input id="numPeople" type="text" >
+        <label for="people">people</label>
+      </form>
+    </div>
+    <div>
+      <button id="calcButton" type="button" onclick="getAmount()">Calculate</button>
+    </div>
+    <div id ="calcOut">
+      <p>Tip Amount</p>
+      <p id="tipTotal">$ 0.00</p>
+      <p>Each</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="tipCalc.js"></script>
+</body>
+</html>
